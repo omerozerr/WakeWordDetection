@@ -13,6 +13,7 @@ df = pd.read_pickle("final_audio_data_csv/audio_data.csv")
 
 ####### Making our data training-ready
 X = df["feature"].values
+print(X.shape)
 X = np.concatenate(X, axis=0).reshape(len(X), 40)
 
 y = np.array(df["class_label"].tolist())

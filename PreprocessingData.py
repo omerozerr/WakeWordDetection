@@ -12,7 +12,7 @@ data, sample_rate = librosa.load(walley_sample)
 
 ##### VISUALIZING WAVE FORM ##
 plt.title("Wave Form")
-librosa.display.waveplot(data, sr=sample_rate)
+librosa.display.waveshow(data, sr=sample_rate)
 plt.show()
 
 ##### VISUALIZING MFCC #######
